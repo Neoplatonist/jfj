@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Josh F. Johnston</title>
+
+  <link rel="stylesheet" href="styles/atom-one-dark.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@1.205.0/distr/fira_code.css">
+</head>
+<body>
+  <header></header>
+
+  <main>
+    <pre><code>    package main
+
+    import "fmt"
+
+    // Human defines attributes
+    type Human struct {
+      Name string `json:"name"`
+
+      Blog        string   `json:"blog"`
+      Email       string   `json:"email"`
+      Github      string   `json:"github"`
+      LinkedIn    string   `json:"linkedin"`
+
+      Description string   `json:"description"`
+      Hobbies     []string `json:"hobbies"`
+
+      Projects    []string `json:"projects"`
+    }
+
+    func main() {
+      <span class="orange">codeMonkey</span> <span class="light-blue">:= &</span>Human{
+        Name: "Josh F. Johnston",
+
+        Blog:     "<a href="https://blog.joshfjohnston.com">https://blog.joshfjohnston.com</a>",
+        Email:    "contact link",
+        Github:   "<a href="https://github.com/Neoplatonist">https://github.com/Neoplatonist</a>",
+        LinkedIn: <div id="linkedin" style="width: 100%"><a href="https://www.linkedin.com/in/josh-johnston-3ba531113">"https://www.linkedin.com/in/josh-johnston-3ba531113",</a></div>
+
+        Description: "To be added",
+        Hobbies: []string{
+          "Programming",
+          "Backend Development",
+          "Scuba Diving",
+        },
+
+
+        Projects: []string{
+          "Programming",
+          "Backend Development",
+          "Scuba Diving",
+          <!-- <span class="blinking-cursor">|</span> -->
+        },
+      }
+
+      fmt.<span class="light-blue">Println</span>(codeMonkey)
+    }
+
+    // Copyright &copy; 2015-2018 Josh F. Johnston
+    </code></pre>
+  </main>
+
+  <footer></footer>
+
+  <script src="highlight.pack.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js">
+  </script>
+  <script> 
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad(); 
+  </script>
+</body>
+</html>
