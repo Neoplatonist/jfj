@@ -9,20 +9,27 @@
 
   <link rel="stylesheet" href="styles/atom-one-dark.css">
   <link rel="stylesheet" href="style.css">
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
   <h1 class="contact-head">Contact Page</h1>
 
   <main>
+    <form id="form-id">
     <pre><code>    {
-      "name": "<input class="form-input" type="text">",
+      "email": "<input class="form-input" type="email" name="email">",
 
       "message":
-      "<textarea class="form-input" type="text" rows="5" cols="50"></textarea>",
+      "<textarea class="form-input" type="text" name="message" rows="5" cols="50"></textarea>",
 
       "submit": "<a onclick="submitForm()" class="submit">click to submit</a>"
     }
     </code></pre>
+
+    <div 
+      class="g-recaptcha" 
+      data-sitekey="6LeIoSYUAAAAAK1NNrRREBN81j69BE7yL_29b-xM"></div>
+    </form>
   </main>
 
   <h4 id="notifications"></h4>
@@ -35,23 +42,8 @@
     hljs.initLineNumbersOnLoad(); 
 
     const submitForm = e => {
-      const data = new FormData();
-      data.append('name',
-        document.getElementsByTagName('input')[0].value);
-      data.append('message',
-        document.getElementsByTagName('textarea')[0].value);
-
-      const options = {
-        method: "POST",
-        body: data
-      };
-
-      fetch("/contact", options)
-        .then(res => res.json())
-        .then(data => {
-          const el = document.getElementById("notifications");
-          el.textContent = data;
-        });
+      const el = document.getElementById("notifications");
+      el.textContent = "Thanks for trying to reach out to me. Sorry our contact page is closed for now. Try again later :)";
     }
   </script>
 </body>
