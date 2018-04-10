@@ -12,7 +12,7 @@ main {
 }
 
 .typing > h1 {
-  animation: type 3s steps(51), blink .5s infinite alternate;
+  animation: type 4s steps(51), blink .5s infinite alternate;
   border-right: 3px solid white;
   display: inline-block;
   font-family: monospace;
