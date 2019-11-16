@@ -88,7 +88,7 @@
       fmt.<span class="light-blue">Println</span>(codeMonkey)
     }
 
-    // Copyright &copy; 2015-2018 Josh F. Johnston
+    // Copyright &copy; 2015-<span id="year"></span> Josh F. Johnston
     </code></pre>
   </main>
 
@@ -100,6 +100,8 @@
   <script>
     hljs.initHighlightingOnLoad();
     hljs.initLineNumbersOnLoad();
+
+    document.getElementById("year").innerHTML = new Date().getFullYear()
   </script>
 </body>
 </html>
