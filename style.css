@@ -6,11 +6,6 @@ body {
   font-size: 1.4rem;
 }
 
-#loader {
-  margin-top: 200px;
-  text-align: center;
-}
-
 main {
   margin: 3rem auto;
   width: 860px;
