@@ -17,7 +17,11 @@
 <body>
   <header></header>
 
-  <main>
+  <div id="loader">
+    <h3>...Loading</h3>
+  </div>
+
+  <main style="display: none;">
     <pre><code>    package main
 
     import "fmt"
@@ -32,8 +36,6 @@
 
       Description string   `json:"description"`
       Hobbies     []string `json:"hobbies"`
-
-      Projects    []string `json:"projects"`
     }
 
     func main() {
@@ -55,33 +57,20 @@
           "Golang",
           "gRPC",
           "Javascript",
+          "TypeScript",
           "ReactJS",
+          "SvelteJS",
           "Redux",
           "MongoDB",
           "MySQL/MariaDB",
           "PostgreSQL",
           "Redis",
           "Docker",
+          "Kubernetes",
           "Apache/NGINX",
           "API Design",
           "Linux",
-        },
-
-        // project pages under construction
-        // for now using github links
-        Projects: []string{
-          "<a href="https://github.com/Neoplatonist/axialrp-node">AxialRP NodeJS</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-roguelike-dungeon">Roguelike Dungeon</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-game-of-life">Game of Life</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-react-wiki-viewer">Wikipedia Viewer</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-react-quote-generator">Quote Generator</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-react-markdown-previewer">Markdown Previewer</a>",
-          "<a href="https://github.com/Neoplatonist/urlshortener">URL Shortener</a>",
-          "<a href="https://github.com/Neoplatonist/go-blog-cms">Blog CMS</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-ttt">Tic Tac Toe</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-twitch">Twitch API</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-simon-game">Simon App</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-pomodoro">Pomodoro App</a>"
+          "IoT",
         },
       }
 
@@ -98,10 +87,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js">
   </script>
   <script>
+    let loader, main
     hljs.initHighlightingOnLoad();
     hljs.initLineNumbersOnLoad();
 
     document.getElementById("year").innerHTML = new Date().getFullYear()
+
+    document.addEventListener("DOMContentLoaded", event => {
+      document.getElementById("loader").style.display = 'none'
+      document.querySelectorAll("main")[0].style.display = 'block'
+    })
   </script>
 </body>
 </html>
