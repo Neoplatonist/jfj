@@ -23,14 +23,13 @@
     type Human struct {
       Name string `json:"name"`
 
-      Blog        string   `json:"blog"`
-      Email       string   `json:"email"`
       Github      string   `json:"github"`
       LinkedIn    string   `json:"linkedin"`
 
       Description string   `json:"description"`
       Hobbies     []string `json:"hobbies"`
 
+      Licenses    []string `json:"licenses"`
       Projects    []string `json:"projects"`
     }
 
@@ -38,8 +37,6 @@
       <span class="orange">codeMonkey</span> <span class="light-blue">:= &</span>Human{
         Name: "Josh F. Johnston",
 
-        Blog:     "<a href="https://blog.joshfjohnston.com">https://blog.joshfjohnston.com</a>",
-        Email:    "<a href="/contact.html">Contact Link</a>",
         Github:   "<a href="https://github.com/Neoplatonist">https://github.com/Neoplatonist</a>",
         LinkedIn: "<a class="typing" href="https://www.linkedin.com/in/josh-johnston-3ba531113"><h1>https://www.linkedin.com/in/josh-johnston-3ba531113</h1></a>",
 
@@ -48,6 +45,10 @@
           "Programming",
           "Backend Development",
           "Scuba Diving",
+        },
+
+        Licenses: []string{
+          "<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/PNK4KMKCVWZD">Cloud Engineering with Google Cloud: Coursera (July 2020)</a>",
         },
 
         TechStack: []string{
