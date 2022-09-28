@@ -1,0 +1,98 @@
+body {
+  background: #282c34;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+main {
+  margin: 3rem auto;
+  width: 860px;
+}
+
+.typing > h1 {
+  animation: type 4s steps(51), blink .5s infinite alternate;
+  border-right: 3px solid white;
+  display: inline-block;
+  /* font-family: monospace; */
+  font-weight: 100;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 51ch;
+  font-size: 1.20rem;
+  vertical-align: middle;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.typing > h1:hover {
+  text-decoration-color: #61afef;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.submit {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.submit:hover {
+  text-decoration-color: #61afef;
+}
+
+.hljs-ln-numbers {
+  text-align: right;
+}
+
+a {
+  text-decoration-color: white;
+}
+
+a:hover {
+  text-decoration-color: #61afef;
+}
+
+.orange {
+  color: #d19a66;
+}
+
+.light-blue {
+  color: #56b6c2;
+}
+
+.contact-head {
+  margin: 1em 0 0 1.5em;
+}
+
+input[type="email"], textarea {
+  color: white;
+  border: 1px solid #abb2bf;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.8em;
+  }
+
+  main {
+    margin: 1rem auto;
+  }
+
+  .typing > h1 {
+    font-size: 0.6rem;
+  }
+}

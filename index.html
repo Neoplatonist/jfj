@@ -4,109 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>Josh F. Johnston</title>
 
-  <link rel="stylesheet" href="styles/atom-one-dark.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@1.205.0/distr/fira_code.css">
 </head>
 
 <body>
   <header></header>
 
   <main>
-    <pre><code>    package main
+    <h1>Thanks for visiting!</h1>
+    <h3>Currently the site is down for remodeling. Please check back later.</h3>
 
-    import "fmt"
-
-    // Human defines attributes
-    type Human struct {
-      Name string `json:"name"`
-
-      Github      string   `json:"github"`
-      LinkedIn    string   `json:"linkedin"`
-
-      Description string   `json:"description"`
-      Hobbies     []string `json:"hobbies"`
-
-      Licenses    []string `json:"licenses"`
-      Projects    []string `json:"projects"`
-    }
-
-    func main() {
-      <span class="orange">codeMonkey</span> <span class="light-blue">:= &</span>Human{
-        Name: "Josh F. Johnston",
-
-        Github:   "<a href="https://github.com/Neoplatonist">https://github.com/Neoplatonist</a>",
-        LinkedIn: "<a class="typing" href="https://www.linkedin.com/in/josh-johnston-3ba531113"><h1>https://www.linkedin.com/in/josh-johnston-3ba531113</h1></a>",
-
-        Description: "To be added",
-        Hobbies: []string{
-          "Programming",
-          "Backend Development",
-          "Scuba Diving",
-        },
-
-        Licenses: []string{
-          "<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/PNK4KMKCVWZD">Cloud Engineering with Google Cloud: Coursera (July 2020)</a>",
-        },
-
-        TechStack: []string{
-          "Golang",
-          "gRPC",
-          "Javascript",
-          "ReactJS",
-          "Redux",
-          "MongoDB",
-          "MySQL/MariaDB",
-          "PostgreSQL",
-          "Redis",
-          "Docker",
-          "Apache/NGINX",
-          "API Design",
-          "Linux",
-        },
-
-        // project pages under construction
-        // for now using github links
-        Projects: []string{
-          "<a href="https://github.com/Neoplatonist/axialrp-node">AxialRP NodeJS</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-roguelike-dungeon">Roguelike Dungeon</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-game-of-life">Game of Life</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-react-wiki-viewer">Wikipedia Viewer</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-react-quote-generator">Quote Generator</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-react-markdown-previewer">Markdown Previewer</a>",
-          "<a href="https://github.com/Neoplatonist/urlshortener">URL Shortener</a>",
-          "<a href="https://github.com/Neoplatonist/go-blog-cms">Blog CMS</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-ttt">Tic Tac Toe</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-twitch">Twitch API</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-simon-game">Simon App</a>",
-          "<a href="https://github.com/Neoplatonist/FCC-pomodoro">Pomodoro App</a>"
-        },
-      }
-
-      fmt.<span class="light-blue">Println</span>(codeMonkey)
-    }
-
-    // Copyright &copy; 2015-<span id="time"></span> Josh F. Johnston
-    </code></pre>
+    <h2>
+      <a href="https://www.linkedin.com/in/neoplatonist/">
+        Click if you would like to get in touch
+      </a>
+    </h2>
   </main>
-
-
-  <script src="highlight.pack.js"></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js">
-    </script>
-  <script>
-    hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
-
-    const time = document.getElementById('time')
-    time.textContent = new Date().getFullYear()
-  </script>
 </body>
 
 </html>
